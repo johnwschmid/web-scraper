@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is a simple webscraper built with Rails. You can choose to monitor a certain webpage and enter a selector that you would like to query for in the DOM. If you choose the text option, it will check it against the value that is returned from the DOM, and if they match you will see a successful result when you press the Check Results button. Here is an example input to monitor the adafruit webpage: URL:
 
-Things you may want to cover:
+https://www.adafruit.com/product/5812
+Check Type: text
+Selector: [itemprop='availability']
+Match Text: In stock
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This will tell you when that product is in stock - I have yet to add a chronjob to regularly check the results, and a notification feature that will send you an email when it is :)
